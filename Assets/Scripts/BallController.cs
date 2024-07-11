@@ -13,6 +13,7 @@ public class BallController : MonoBehaviour
     public TMP_Text scoreText;
     public GameObject gameOverCanvas;
     public TMP_Text gameOverText;
+    public AudioSource hit, goal;
 
     private bool gameStarted = false;  // Nueva bandera para verificar si el juego ha comenzado
 
@@ -39,6 +40,7 @@ public class BallController : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
+        hit.Play();
         if (collision.gameObject.CompareTag("Wall"))
         {
             direction.y = -direction.y;
@@ -59,6 +61,7 @@ public class BallController : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
+        goal.Play();
         if (other.CompareTag("LeftGoal"))
         {
             rightScore++;
