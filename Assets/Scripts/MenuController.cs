@@ -13,6 +13,7 @@ public class MenuController : MonoBehaviour
     public Slider masterSlider, musicSlider, sfxSlider;
     public AudioSource btnClick, btnPlay;
 
+    // Start is called before the first frame update
     void Start()
     {
         if (PlayerPrefs.HasKey("MasterVol"))
@@ -35,6 +36,12 @@ public class MenuController : MonoBehaviour
             sfxSlider.value = PlayerPrefs.GetFloat("SFXVol");
             sfxLabel.text = Mathf.RoundToInt(sfxSlider.value + 80).ToString();
         }
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
     }
 
     public void StartGame()
