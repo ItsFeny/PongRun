@@ -9,6 +9,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Main Menu.unity
     guid: fd45a5102df7ec04fbdb17e4c3842597
   - enabled: 1
+    path: Assets/Scenes/Lobby.unity
+    guid: bca612ba3370e4c4199238a48398844a
+  - enabled: 1
     path: Assets/Scenes/Futbi.unity
     guid: 27b82c67664a6114890ba9a6f1e5eb8d
+  - enabled: 1
+    path: Assets/Scenes/Menu Futbi.unity
+    guid: f99b8a1428159cf479518a3f78a8f689
   m_configObjects: {}
