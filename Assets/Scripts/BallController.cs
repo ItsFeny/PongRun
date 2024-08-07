@@ -14,7 +14,7 @@ public class BallController : MonoBehaviour
     public GameObject gameOverCanvas;
     public TMP_Text gameOverText;
 
-    private bool gameStarted = false;  // Nueva bandera para verificar si el juego ha comenzado
+    private bool gameStarted = false;  
 
     void Start()
     {
@@ -24,14 +24,13 @@ public class BallController : MonoBehaviour
 
     void Update()
     {
-        // Inicia el movimiento de la pelota solo cuando el juego ha comenzado
+        
         if (gameStarted)
         {
             transform.Translate(direction * currentSpeed * Time.deltaTime);
         }
 
-        // Verifica si se ha tocado la pantalla para iniciar el juego
-        if (!gameStarted && Input.GetMouseButtonDown(0))
+        if (!gameStarted && (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D)))
         {
             gameStarted = true;
         }
@@ -65,7 +64,7 @@ public class BallController : MonoBehaviour
             CheckGameOver();
             ResetBall();
             UpdateScoreText();
-            gameStarted = false;  // Reinicia el juego cuando se anota un gol
+            gameStarted = false;  
         }
         else if (other.CompareTag("RightGoal"))
         {
@@ -73,7 +72,7 @@ public class BallController : MonoBehaviour
             CheckGameOver();
             ResetBall();
             UpdateScoreText();
-            gameStarted = false;  // Reinicia el juego cuando se anota un gol
+            gameStarted = false;  
         }
     }
 
