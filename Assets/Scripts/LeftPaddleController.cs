@@ -2,10 +2,13 @@ using UnityEngine;
 
 public class LeftPaddleController : MonoBehaviour
 {
-    bool isDragging = false;
-    Vector2 startPosition;
-    [SerializeField] float paddleHeight = 4f;
-    [SerializeField] GameObject tutorial;  
+    [SerializeField] float paddleWidth = 4f;
+    [SerializeField] float moveSpeed = 5f;
+    [SerializeField] GameObject tutorial;
+    [SerializeField] Animator animator;  
+
+    private bool isMovingX = false;
+    private Vector3 originalScale;
 
     void Start()
     {
@@ -13,34 +16,41 @@ public class LeftPaddleController : MonoBehaviour
         {
             tutorial.SetActive(true);
         }
+
+        originalScale = transform.localScale;
     }
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (tutorial != null && (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D)))
         {
-            startPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            if (startPosition.x < 0)
-            {
-                isDragging = true;
-            }
-
-            if (tutorial != null)
-            {
-                tutorial.SetActive(false);
-            }
+            tutorial.SetActive(false);
         }
 
-        if (isDragging)
-        {
-            Vector2 currentPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            float clampedY = Mathf.Clamp(currentPosition.y, -paddleHeight, paddleHeight);
-            transform.position = new Vector3(transform.position.x, clampedY, transform.position.z);
-        }
+        float moveX = Input.GetAxis("Horizontal") * moveSpeed * Time.deltaTime;
+        float moveY = Input.GetAxis("Vertical") * moveSpeed * Time.deltaTime;
 
-        if (Input.GetMouseButtonUp(0))
+        Vector3 newPosition = transform.position + new Vector3(moveX, moveY, 0);
+        newPosition.x = Mathf.Clamp(newPosition.x, -paddleWidth, 0);
+        transform.position = newPosition;
+
+        if (moveX != 0)
         {
-            isDragging = false;
+            isMovingX = true;
+            animator.SetBool("IsMoveX", true);
+            if (moveX < 0)
+            {
+                transform.localScale = new Vector3(-originalScale.x, originalScale.y, originalScale.z);  
+            }
+            else if (moveX > 0)
+            {
+                transform.localScale = new Vector3(originalScale.x, originalScale.y, originalScale.z);  
+            }
+        }
+        else
+        {
+            isMovingX = false;
+            animator.SetBool("IsMoveX", false);
         }
     }
 }
