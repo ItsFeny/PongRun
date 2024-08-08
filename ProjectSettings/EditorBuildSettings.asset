@@ -14,7 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Futbi.unity
     guid: 27b82c67664a6114890ba9a6f1e5eb8d
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Menu Futbi.unity
     guid: f99b8a1428159cf479518a3f78a8f689
   m_configObjects: {}
