@@ -16,11 +16,11 @@ public class PlayerSpawner : MonoBehaviourPunCallbacks
     {
         if (PhotonNetwork.IsMasterClient)
         {
-            SpawnPlayerAtPosition(Player1, 0, false, -4f, 0f); 
+            SpawnPlayerAtPosition(Player1, 0, false, -4f, 0f);
         }
         else
         {
-            SpawnPlayerAtPosition(Player2, 1, true, 0f, 4f); 
+            SpawnPlayerAtPosition(Player2, 1, true, 0f, 4f);
         }
     }
 
@@ -31,13 +31,11 @@ public class PlayerSpawner : MonoBehaviourPunCallbacks
             Debug.LogError("Player prefab is not assigned in PlayerSpawner!");
             return;
         }
-
         if (spawnPoints == null || spawnPoints.Length == 0)
         {
             Debug.LogError("No spawn points assigned in PlayerSpawner!");
             return;
         }
-
         if (spawnIndex < spawnPoints.Length)
         {
             Vector3 spawnPosition = spawnPoints[spawnIndex].position;

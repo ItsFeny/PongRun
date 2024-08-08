@@ -46,6 +46,12 @@ MonoBehaviour:
   - QuitGameRPC
   - RestartGameRPC
   - ShowWinner
+  - PauseGame
+  - RestartGame
+  - ResumeGame
+  - ReturnToMainMenu
+  - HidePauseMenu
+  - ShowPauseMenu
   DisableAutoOpenWizard: 1
   ShowSettings: 0
   DevRegionSetOnce: 1

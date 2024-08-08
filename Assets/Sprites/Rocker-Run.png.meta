@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 6e4c30dda338cec408585cf5d01e93a5
+guid: dc054b64a3754714aba5a82ee0596304
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -136,13 +136,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Pj2-move_0
+      name: Rocker-Run_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 64
-        height: 64
+        width: 36
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,20 +150,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ebbc5bc71f2b1d3468abb46b28fc0f98
-      internalID: 1022773131
+      spriteID: 132bb9e3d01cde949912d3f47d76c202
+      internalID: -1992102718
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pj2-move_1
+      name: Rocker-Run_1
       rect:
         serializedVersion: 2
-        x: 64
+        x: 36
         y: 0
-        width: 64
-        height: 64
+        width: 36
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,20 +171,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d951f1e26a8531948b9579f9985f45b9
-      internalID: -608754586
+      spriteID: 4f387e894168e0e4bba33d3d8fe13ef8
+      internalID: -85203465
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pj2-move_2
+      name: Rocker-Run_2
       rect:
         serializedVersion: 2
-        x: 128
+        x: 72
         y: 0
-        width: 64
-        height: 64
+        width: 36
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -192,20 +192,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3b348997f0c26bb46a77e32f9a76d8be
-      internalID: -1519866577
+      spriteID: 43cf1d28c3f74eb4d88268e4f68eb3a1
+      internalID: -1106506658
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pj2-move_3
+      name: Rocker-Run_3
       rect:
         serializedVersion: 2
-        x: 192
+        x: 108
         y: 0
-        width: 64
-        height: 64
+        width: 36
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -213,20 +213,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: de25852f2740f3744ab8fc491db1299a
-      internalID: -1536918898
+      spriteID: fcc001ac4faa9c44e862ce4af094f5ed
+      internalID: 267010894
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pj2-move_4
+      name: Rocker-Run_4
       rect:
         serializedVersion: 2
-        x: 256
+        x: 144
         y: 0
-        width: 64
-        height: 64
+        width: 36
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -234,20 +234,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d385e582685554a4397f7ed8b24a7792
-      internalID: -1293532501
+      spriteID: 57994079057096747867797c54881463
+      internalID: 1396584935
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pj2-move_5
+      name: Rocker-Run_5
       rect:
         serializedVersion: 2
-        x: 320
+        x: 180
         y: 0
-        width: 64
-        height: 64
+        width: 36
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -255,50 +255,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aa36171096675aa4faf641d6c56ce032
-      internalID: 1853254588
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pj2-move_6
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a90fd47dff625514086f7acb28a8978c
-      internalID: 1732274871
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pj2-move_7
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 185616591f87599428f298339fec8e96
-      internalID: -1537271281
+      spriteID: f7f378e9eac55934683565327e8bcb17
+      internalID: 1797070036
       vertices: []
       indices: 
       edges: []
@@ -314,14 +272,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Pj2-move_0: 1022773131
-      Pj2-move_1: -608754586
-      Pj2-move_2: -1519866577
-      Pj2-move_3: -1536918898
-      Pj2-move_4: -1293532501
-      Pj2-move_5: 1853254588
-      Pj2-move_6: 1732274871
-      Pj2-move_7: -1537271281
+      Rocker-Run_0: -1992102718
+      Rocker-Run_1: -85203465
+      Rocker-Run_2: -1106506658
+      Rocker-Run_3: 267010894
+      Rocker-Run_4: 1396584935
+      Rocker-Run_5: 1797070036
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

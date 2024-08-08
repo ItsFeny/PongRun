@@ -72,7 +72,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     public override void OnJoinedRoom()
     {
         Debug.Log("Unido a la sala. Cargando escena de juego...");
-        PhotonNetwork.LoadLevel("Futbi");
+        PhotonNetwork.LoadLevel("PongRun");
     }
 
     public override void OnCreateRoomFailed(short returnCode, string message)

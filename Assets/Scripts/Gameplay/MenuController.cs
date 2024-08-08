@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Audio;
@@ -13,7 +11,6 @@ public class MenuController : MonoBehaviour
     public Slider masterSlider, musicSlider, sfxSlider;
     public AudioSource btnClick, btnPlay;
 
-    // Start is called before the first frame update
     void Start()
     {
         if (PlayerPrefs.HasKey("MasterVol"))

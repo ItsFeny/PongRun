@@ -2,13 +2,12 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using Photon.Pun;
-using Photon.Realtime;
 
 public class BallController : MonoBehaviourPunCallbacks
 {
     public float initialSpeed = 10f;
     public float speedIncrement = 1f;
-    public float maxSpeed = 20f; // Velocidad máxima para la pelota
+    public float maxSpeed = 20f;
     private float currentSpeed;
     private Vector2 direction;
     public GameObject leftPaddle, rightPaddle;
@@ -63,7 +62,7 @@ public class BallController : MonoBehaviourPunCallbacks
             {
                 direction.x = -direction.x;
                 direction = Quaternion.Euler(0, 0, Random.Range(-30f, 30f)) * direction;
-                currentSpeed = Mathf.Min(currentSpeed + speedIncrement, maxSpeed); // Limitar la velocidad máxima
+                currentSpeed = Mathf.Min(currentSpeed + speedIncrement, maxSpeed);
             }
             photonView.RPC("SyncDirection", RpcTarget.All, direction, currentSpeed);
         }
@@ -159,8 +158,29 @@ public class BallController : MonoBehaviourPunCallbacks
     [PunRPC]
     void RestartGameRPC()
     {
+        // Eliminar todas las instancias de los jugadores y el menú de pausa
+        PhotonNetwork.DestroyAll();
+
+        // Cargar la escena actual de nuevo
         PhotonNetwork.LoadLevel(SceneManager.GetActiveScene().buildIndex);
+
+        // Volver a instanciar los jugadores y el menú de pausa
+        if (PhotonNetwork.IsMasterClient)
+        {
+            PhotonNetwork.Instantiate(leftPaddle.name, leftPaddle.transform.position, Quaternion.identity);
+            PhotonNetwork.Instantiate("MenuPause", Vector3.zero, Quaternion.identity);
+        }
+        else
+        {
+            PhotonNetwork.Instantiate(rightPaddle.name, rightPaddle.transform.position, Quaternion.identity);
+            PhotonNetwork.Instantiate("MenuPause", Vector3.zero, Quaternion.identity);
+        }
+
+        // Reiniciar el juego
+        ResetBall();
+        UpdateScoreText();
         Time.timeScale = 1f;
+        gameStarted = false;
     }
 
     public void QuitGame()
@@ -178,11 +198,11 @@ public class BallController : MonoBehaviourPunCallbacks
 
     public override void OnJoinedRoom()
     {
-        // Asegurarse de que los jugadores se instancien al unirse a la sala
         base.OnJoinedRoom();
         if (PhotonNetwork.IsMasterClient)
         {
             PhotonNetwork.Instantiate(leftPaddle.name, leftPaddle.transform.position, Quaternion.identity);
+            PhotonNetwork.Instantiate("MenuPause", Vector3.zero, Quaternion.identity);
         }
         else
         {
@@ -192,7 +212,6 @@ public class BallController : MonoBehaviourPunCallbacks
 
     public override void OnLeftRoom()
     {
-        // Manejar el caso de cuando el jugador deja la sala
         base.OnLeftRoom();
         SceneManager.LoadScene("Main Menu");
     }

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 73a3b7c3ead0851468513c6d49fe3dd3
+guid: ba4769789798c3e4398857ce946c4a33
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -136,13 +136,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Bola_0
+      name: StTechno-Idle_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 16
-        height: 16
+        width: 32
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,41 +150,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ac5b8831a8bb74846babc7c5fdfa2b7a
-      internalID: -236886567
+      spriteID: bb7cf1ebd93efb14db1eeaae7d656712
+      internalID: 1962355660
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bola_1
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ef5e7e41e19a21b48ae9cda676f952f7
-      internalID: -61624297
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bola_2
+      name: StTechno-Idle_1
       rect:
         serializedVersion: 2
         x: 32
         y: 0
-        width: 16
-        height: 16
+        width: 32
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -192,20 +171,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9c758b5ea7261f54b9873a9ea7543a4d
-      internalID: -572631614
+      spriteID: fee9f379f7d6a8e47806a1df1eb2413b
+      internalID: 579796174
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bola_3
+      name: StTechno-Idle_2
       rect:
         serializedVersion: 2
-        x: 48
+        x: 64
         y: 0
-        width: 16
-        height: 16
+        width: 32
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -213,8 +192,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 226cf1241e3b7a04d9cd5408dedc86d7
-      internalID: -104879497
+      spriteID: befc7479540b4ff4fafb981b576da699
+      internalID: 601022428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StTechno-Idle_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24a8998827135a84bbc66d9ff7dd6c49
+      internalID: -1137629720
       vertices: []
       indices: 
       edges: []
@@ -230,10 +230,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Bola_0: -236886567
-      Bola_1: -61624297
-      Bola_2: -572631614
-      Bola_3: -104879497
+      StTechno-Idle_0: 1962355660
+      StTechno-Idle_1: 579796174
+      StTechno-Idle_2: 601022428
+      StTechno-Idle_3: -1137629720
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

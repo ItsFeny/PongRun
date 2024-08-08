@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5b28be8b08728604cbcc2830574eb351
+guid: fdfd1e74624751d4e90a231cf80a1477
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -136,13 +136,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Pj2-Idle_0
+      name: Rocker-Idle_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 64
-        height: 64
+        width: 32
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,20 +150,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bd317ff286fdd5a47b7aa78794fb74a5
-      internalID: -282111547
+      spriteID: fb2d3b3764f06c44c8cc5126b76bb7b2
+      internalID: 1513649186
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pj2-Idle_1
+      name: Rocker-Idle_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ac3832e59ccedc4ca56bfa740fcb32d
+      internalID: -343896313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rocker-Idle_2
       rect:
         serializedVersion: 2
         x: 64
         y: 0
-        width: 64
-        height: 64
+        width: 32
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,20 +192,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ae94b3d52a77e54ca1a32e0920f7555
-      internalID: 1196027418
+      spriteID: c766f62bf76e6114e9a9024a390774b5
+      internalID: 142011878
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pj2-Idle_2
+      name: Rocker-Idle_3
       rect:
         serializedVersion: 2
-        x: 128
+        x: 96
         y: 0
-        width: 64
-        height: 64
+        width: 32
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -192,29 +213,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d52b151da82416741a140e8967dac524
-      internalID: 1227522760
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pj2-Idle_3
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ea01509a460291345bc91eb617bf4532
-      internalID: 1401364034
+      spriteID: 96845dc4ff0eb374d9814f34659309a8
+      internalID: 142564965
       vertices: []
       indices: 
       edges: []
@@ -230,10 +230,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Pj2-Idle_0: -282111547
-      Pj2-Idle_1: 1196027418
-      Pj2-Idle_2: 1227522760
-      Pj2-Idle_3: 1401364034
+      Rocker-Idle_0: 1513649186
+      Rocker-Idle_1: -343896313
+      Rocker-Idle_2: 142011878
+      Rocker-Idle_3: 142564965
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

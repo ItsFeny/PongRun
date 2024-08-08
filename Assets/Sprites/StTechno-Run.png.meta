@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e05ce3a5b29643841acbb92f68339e55
+guid: f35ba0b9ecda37f4baa280b55d95c080
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -136,13 +136,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Pj1-Idle_0
+      name: StTechno-Run_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 64
-        height: 64
+        width: 36
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,20 +150,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d4a3fa2973fc2d84fb73e86f15057924
-      internalID: -162548748
+      spriteID: 18a4d2e5074feaa4c96e71835c73ce0d
+      internalID: 1585221572
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pj1-Idle_1
+      name: StTechno-Run_1
       rect:
         serializedVersion: 2
-        x: 64
+        x: 36
         y: 0
-        width: 64
-        height: 64
+        width: 36
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,20 +171,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8759f39de8b0f0647b5b47a46f534d8f
-      internalID: -1251734173
+      spriteID: 37f529d04378f0f4580b798deec300ac
+      internalID: 1771771636
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pj1-Idle_2
+      name: StTechno-Run_2
       rect:
         serializedVersion: 2
-        x: 128
+        x: 72
         y: 0
-        width: 64
-        height: 64
+        width: 36
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -192,20 +192,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1f98a50a55450fc48813badb4285ca99
-      internalID: 1733900132
+      spriteID: e551729577a168340a313bc62a852960
+      internalID: 2034705179
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pj1-Idle_3
+      name: StTechno-Run_3
       rect:
         serializedVersion: 2
-        x: 192
+        x: 108
         y: 0
-        width: 64
-        height: 64
+        width: 36
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -213,20 +213,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dfe8013a1d8ae0b4bacde77ac54a2d4b
-      internalID: -1296234565
+      spriteID: 738e9faf18048864b863fc984c698429
+      internalID: 1135295857
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pj1-Idle_4
+      name: StTechno-Run_4
       rect:
         serializedVersion: 2
-        x: 256
+        x: 144
         y: 0
-        width: 64
-        height: 64
+        width: 36
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -234,8 +234,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6f1d3dd5e14ff224d8dc18ee39c4aef7
-      internalID: -796415846
+      spriteID: 21d3ce6a7861c6a48a26262ef26f065f
+      internalID: -787943294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StTechno-Run_5
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 0
+        width: 36
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bf22c5572c60e349a19a8a92604a41a
+      internalID: 1379805624
       vertices: []
       indices: 
       edges: []
@@ -251,11 +272,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Pj1-Idle_0: -162548748
-      Pj1-Idle_1: -1251734173
-      Pj1-Idle_2: 1733900132
-      Pj1-Idle_3: -1296234565
-      Pj1-Idle_4: -796415846
+      StTechno-Run_0: 1585221572
+      StTechno-Run_1: 1771771636
+      StTechno-Run_2: 2034705179
+      StTechno-Run_3: 1135295857
+      StTechno-Run_4: -787943294
+      StTechno-Run_5: 1379805624
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
