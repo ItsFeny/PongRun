@@ -43,6 +43,7 @@ public class PlayerSpawner : MonoBehaviourPunCallbacks
             Vector3 spawnPosition = spawnPoints[spawnIndex].position;
             GameObject player = PhotonNetwork.Instantiate(prefab.name, spawnPosition, Quaternion.identity);
             PlayerController playerController = player.GetComponent<PlayerController>();
+
             if (playerController != null)
             {
                 playerController.faceLeft = faceLeft;

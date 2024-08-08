@@ -22,7 +22,6 @@ public class PlayerController : MonoBehaviourPunCallbacks, IPunObservable
             Debug.LogError("PhotonView component missing on player prefab!");
         }
 
-        // Ajustar la escala inicial según faceLeft
         if (faceLeft)
         {
             transform.localScale = new Vector3(-originalScale.x, originalScale.y, originalScale.z);
@@ -60,7 +59,6 @@ public class PlayerController : MonoBehaviourPunCallbacks, IPunObservable
             isMovingX = true;
             animator.SetBool("IsMoveX", true);
 
-            // Ajustar la escala del sprite según el movimiento
             if (moveX > 0)
             {
                 transform.localScale = new Vector3(originalScale.x, originalScale.y, originalScale.z);
@@ -75,7 +73,6 @@ public class PlayerController : MonoBehaviourPunCallbacks, IPunObservable
             isMovingX = false;
             animator.SetBool("IsMoveX", false);
 
-            // Mantener la dirección de la mirada según faceLeft cuando no se mueve
             if (faceLeft)
             {
                 transform.localScale = new Vector3(-originalScale.x, originalScale.y, originalScale.z);
@@ -93,14 +90,14 @@ public class PlayerController : MonoBehaviourPunCallbacks, IPunObservable
         {
             stream.SendNext(transform.position);
             stream.SendNext(isMovingX);
-            stream.SendNext(transform.localScale); // Enviar la escala también
+            stream.SendNext(transform.localScale); 
         }
         else
         {
             transform.position = (Vector3)stream.ReceiveNext();
             isMovingX = (bool)stream.ReceiveNext();
             animator.SetBool("IsMoveX", isMovingX);
-            transform.localScale = (Vector3)stream.ReceiveNext(); // Recibir la escala también
+            transform.localScale = (Vector3)stream.ReceiveNext(); 
         }
     }
 }

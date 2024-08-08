@@ -1,21 +1,14 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Photon.Pun;
 
-public class MenuPause : MonoBehaviour
+public class MenuPause : MonoBehaviourPunCallbacks
 {
     public GameObject pauseMenu, options;
     public bool isPaused;
     public AudioSource theMusic, levelMusic;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
+    [System.Obsolete]
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -41,6 +34,7 @@ public class MenuPause : MonoBehaviour
             Time.timeScale = 0f;
             levelMusic.Pause();
             theMusic.Play();
+            photonView.RPC("PauseGame", RpcTarget.All);
         }
     }
 
@@ -51,17 +45,50 @@ public class MenuPause : MonoBehaviour
         Time.timeScale = 1f;
         theMusic.Stop();
         levelMusic.UnPause();
+        photonView.RPC("ResumeGame", RpcTarget.All);
+    }
+
+    [PunRPC]
+    void PauseGame()
+    {
+        Time.timeScale = 0f;
+    }
+
+    [PunRPC]
+    void ResumeGame()
+    {
+        Time.timeScale = 1f;
     }
 
     public void Restart()
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        photonView.RPC("RestartGame", RpcTarget.All);
+    }
+
+    [PunRPC]
+    void RestartGame()
+    {
+        PhotonNetwork.LoadLevel(SceneManager.GetActiveScene().buildIndex);
     }
 
     public void Return()
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene(0);
+        photonView.RPC("ReturnToMainMenu", RpcTarget.All);
+    }
+
+    [PunRPC]
+    void ReturnToMainMenu()
+    {
+        PhotonNetwork.LeaveRoom();
+        SceneManager.LoadScene("Main Menu");
+    }
+
+    private PhotonView photonView;
+
+    void Start()
+    {
+        photonView = GetComponent<PhotonView>();
     }
 }
