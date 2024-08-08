@@ -8,13 +8,28 @@ public class MenuPause : MonoBehaviourPunCallbacks
     public bool isPaused;
     public AudioSource theMusic, levelMusic;
 
+    private PhotonView photonView;
+
+    void Start()
+    {
+        photonView = GetComponent<PhotonView>();
+    }
+
     [System.Obsolete]
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            Pause();
-            if (options.active)
+            if (!isPaused)
+            {
+                Pause();
+            }
+            else
+            {
+                Resume();
+            }
+
+            if (options.activeSelf)
             {
                 options.SetActive(false);
             }
@@ -23,26 +38,17 @@ public class MenuPause : MonoBehaviourPunCallbacks
 
     public void Pause()
     {
-        if (isPaused)
-        {
-            Resume();
-        }
-        else
-        {
-            isPaused = true;
-            pauseMenu.SetActive(true);
-            Time.timeScale = 0f;
-            levelMusic.Pause();
-            theMusic.Play();
-            photonView.RPC("PauseGame", RpcTarget.All);
-        }
+        isPaused = true;
+        photonView.RPC("ShowPauseMenu", RpcTarget.All);
+        levelMusic.Pause();
+        theMusic.Play();
+        photonView.RPC("PauseGame", RpcTarget.All);
     }
 
     public void Resume()
     {
         isPaused = false;
-        pauseMenu.SetActive(false);
-        Time.timeScale = 1f;
+        photonView.RPC("HidePauseMenu", RpcTarget.All);
         theMusic.Stop();
         levelMusic.UnPause();
         photonView.RPC("ResumeGame", RpcTarget.All);
@@ -58,6 +64,18 @@ public class MenuPause : MonoBehaviourPunCallbacks
     void ResumeGame()
     {
         Time.timeScale = 1f;
+    }
+
+    [PunRPC]
+    void ShowPauseMenu()
+    {
+        pauseMenu.SetActive(true);
+    }
+
+    [PunRPC]
+    void HidePauseMenu()
+    {
+        pauseMenu.SetActive(false);
     }
 
     public void Restart()
@@ -83,12 +101,5 @@ public class MenuPause : MonoBehaviourPunCallbacks
     {
         PhotonNetwork.LeaveRoom();
         SceneManager.LoadScene("Main Menu");
-    }
-
-    private PhotonView photonView;
-
-    void Start()
-    {
-        photonView = GetComponent<PhotonView>();
     }
 }
