@@ -198,11 +198,19 @@ PrefabInstance:
     - target: {fileID: 7194203527175729977, guid: 3cf2c5c1e0f74974f9f70006fd4f67d1, type: 3}
       propertyPath: m_fontAsset
       value: 
-      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+      objectReference: {fileID: 11400000, guid: 25068e0d58c101748b0b9aa4dfbca74b, type: 2}
+    - target: {fileID: 7194203527175729977, guid: 3cf2c5c1e0f74974f9f70006fd4f67d1, type: 3}
+      propertyPath: m_fontStyle
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7194203527175729977, guid: 3cf2c5c1e0f74974f9f70006fd4f67d1, type: 3}
       propertyPath: m_sharedMaterial
       value: 
-      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+      objectReference: {fileID: 2328985531543591083, guid: 25068e0d58c101748b0b9aa4dfbca74b, type: 2}
+    - target: {fileID: 7194203527175729977, guid: 3cf2c5c1e0f74974f9f70006fd4f67d1, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8968500466762766037, guid: 3cf2c5c1e0f74974f9f70006fd4f67d1, type: 3}
       propertyPath: m_Name
       value: Button (2)
@@ -336,11 +344,19 @@ PrefabInstance:
     - target: {fileID: 7194203527175729977, guid: 3cf2c5c1e0f74974f9f70006fd4f67d1, type: 3}
       propertyPath: m_fontAsset
       value: 
-      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+      objectReference: {fileID: 11400000, guid: 25068e0d58c101748b0b9aa4dfbca74b, type: 2}
+    - target: {fileID: 7194203527175729977, guid: 3cf2c5c1e0f74974f9f70006fd4f67d1, type: 3}
+      propertyPath: m_fontStyle
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7194203527175729977, guid: 3cf2c5c1e0f74974f9f70006fd4f67d1, type: 3}
       propertyPath: m_sharedMaterial
       value: 
-      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+      objectReference: {fileID: 2328985531543591083, guid: 25068e0d58c101748b0b9aa4dfbca74b, type: 2}
+    - target: {fileID: 7194203527175729977, guid: 3cf2c5c1e0f74974f9f70006fd4f67d1, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8968500466762766037, guid: 3cf2c5c1e0f74974f9f70006fd4f67d1, type: 3}
       propertyPath: m_Name
       value: Button
@@ -474,11 +490,19 @@ PrefabInstance:
     - target: {fileID: 7194203527175729977, guid: 3cf2c5c1e0f74974f9f70006fd4f67d1, type: 3}
       propertyPath: m_fontAsset
       value: 
-      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+      objectReference: {fileID: 11400000, guid: 25068e0d58c101748b0b9aa4dfbca74b, type: 2}
+    - target: {fileID: 7194203527175729977, guid: 3cf2c5c1e0f74974f9f70006fd4f67d1, type: 3}
+      propertyPath: m_fontStyle
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7194203527175729977, guid: 3cf2c5c1e0f74974f9f70006fd4f67d1, type: 3}
       propertyPath: m_sharedMaterial
       value: 
-      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+      objectReference: {fileID: 2328985531543591083, guid: 25068e0d58c101748b0b9aa4dfbca74b, type: 2}
+    - target: {fileID: 7194203527175729977, guid: 3cf2c5c1e0f74974f9f70006fd4f67d1, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8968500466762766037, guid: 3cf2c5c1e0f74974f9f70006fd4f67d1, type: 3}
       propertyPath: m_Name
       value: Button (1)
@@ -612,11 +636,19 @@ PrefabInstance:
     - target: {fileID: 7194203527175729977, guid: 3cf2c5c1e0f74974f9f70006fd4f67d1, type: 3}
       propertyPath: m_fontAsset
       value: 
-      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+      objectReference: {fileID: 11400000, guid: 25068e0d58c101748b0b9aa4dfbca74b, type: 2}
+    - target: {fileID: 7194203527175729977, guid: 3cf2c5c1e0f74974f9f70006fd4f67d1, type: 3}
+      propertyPath: m_fontStyle
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7194203527175729977, guid: 3cf2c5c1e0f74974f9f70006fd4f67d1, type: 3}
       propertyPath: m_sharedMaterial
       value: 
-      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+      objectReference: {fileID: 2328985531543591083, guid: 25068e0d58c101748b0b9aa4dfbca74b, type: 2}
+    - target: {fileID: 7194203527175729977, guid: 3cf2c5c1e0f74974f9f70006fd4f67d1, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8968500466762766037, guid: 3cf2c5c1e0f74974f9f70006fd4f67d1, type: 3}
       propertyPath: m_Name
       value: Button (3)
