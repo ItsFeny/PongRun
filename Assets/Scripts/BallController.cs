@@ -147,7 +147,7 @@ public class BallController : MonoBehaviourPunCallbacks
     void ShowWinner(string playerName, int score)
     {
         pointsText.text = $"Puntos: {score}";
-        winnerText.text = $"El {playerName} ganó la partida";
+        winnerText.text = $"El {playerName} gana la partida";
         winnerCanvas.SetActive(true);
     }
 

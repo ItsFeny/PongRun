@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class MenuPause : MonoBehaviour
 {
-    public GameObject pauseMenu;
+    public GameObject pauseMenu, options;
     public bool isPaused;
     public AudioSource theMusic, levelMusic;
 
@@ -21,6 +21,10 @@ public class MenuPause : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             Pause();
+            if (options.active)
+            {
+                options.SetActive(false);
+            }
         }
     }
 
